@@ -1,4 +1,4 @@
-REALITZA LA DOCUMENTACIÓ NECESSÀRIA PER LA INSTAL·LACIÓ PAS A PAS.
+# REALITZA LA DOCUMENTACIÓ NECESSÀRIA PER LA INSTAL·LACIÓ PAS A PAS.
 
 1. Indica clarament els passos per reprodurïr la instal·lació en un altra màquina.
 2. Si realitzes algun canvi en la configuració del firewall, o altres elements de seguretat per pode
