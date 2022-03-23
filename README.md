@@ -81,4 +81,98 @@
 
 *D'acord, una vegada dins, per cambiar la contrasenya a 'patata' hem de executar la seguent comanda*
 
+![WhatsApp Image 2022-03-23 at 19 07 07](https://user-images.githubusercontent.com/101892290/159766839-1cdfb766-6cbe-458e-8e92-f46ec55f1806.jpeg)
+
+*Pero com podem observar dona error i ens diu que ho hem de fer amb un ALTER USER, pero si ho fem amb ALTER USER ens dira que la contrasenya no compleix els requisits minims, llavors, primer hem de cambiar la contrasenya a una que si compleixi aquests requisits minims (P@ssw0rd) i llavors si ens deixara cambiar la longitud mínima de la contrasenya i la seguretat a LOW.*
+
+![WhatsApp Image 2022-03-23 at 19 08 07](https://user-images.githubusercontent.com/101892290/159767000-cd5b8469-e153-4f96-aaaf-76f700521255.jpeg)
+
+*I un cop fet aixo, ja ens deixara canviar la contrasenya a patata*
+
+![WhatsApp Image 2022-03-23 at 19 09 13](https://user-images.githubusercontent.com/101892290/159767194-42fa8b06-d51c-4253-b9c5-05e7e659029d.jpeg)
+
+*Politica de les contrasenyes despres de fer els passos anteriors*
+
+![WhatsApp Image 2022-03-22 at 16 32 37](https://user-images.githubusercontent.com/101892290/159767515-4f950072-f1e0-40a3-bf2e-34f00164b6ea.jpeg)
+
+*I configurem el mysql secure installation*
+
+> mysql_secure_installation
+
+![WhatsApp Image 2022-03-22 at 16 35 54](https://user-images.githubusercontent.com/101892290/159767746-3284ecd2-2495-4779-895a-0cccd5e0a4b9.jpeg)
+
+## 2. Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server en el sistema operatiu?
+
+*Arrancar servei*
+
+> sudo service mysql start
+
+*Verificar status servei*
+
+> sudo service mysql status
+
+![sudo service mysql start](https://user-images.githubusercontent.com/101892290/159768444-4decd58e-618e-4d98-8942-4d474e3d9b62.jpg)
+
+
+*Apagar servei*
+
+>sudo service mysql stop
+
+![WhatsApp Image 2022-03-23 at 19 17 27](https://user-images.githubusercontent.com/101892290/159768556-6303cd2a-01ae-4bec-b477-b221e590a68b.jpeg)
+
+## 3. A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server?
+
+*El fitxer de configuració del SGBD Percona Server es troba en la ruta /etc/my.cnf*
+
+>Es pot entrar amb nano /etc/my.cnf
+
+![mycnf nano](https://user-images.githubusercontent.com/101892290/159769167-022d4e36-f359-4b02-96f3-806088a0e5ec.jpg)
+
+## 4. A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut?
+
+*En la ruta /var/lib/mysql. Ho indica en la documentació oficial de Precona*
+
+> ls /var/lib/mysql.
+
+![var lib mysql](https://user-images.githubusercontent.com/101892290/159769439-231b21de-931a-4a32-888e-fed3d0987e0d.jpg)
+
+## 5. Crea un usuari anomenat asix en el sistema operatiu i en SGBD de tal manera que aquest usuari del sistema operatiu no hagi d'introduir l'usuari i password cada vegada que cridem al client mysql? ##
+#### Usuari SO-→ asix / patata ####
+#### Usuari MySQL → asix / patata ####
+
+*En la base de dades, crearem l'usuari amb permis total amb les seguents comandes*
+
+![create user asix](https://user-images.githubusercontent.com/101892290/159769978-000822c3-e97f-4c25-845d-9df4bef0b506.jpg)
+
+*Creem l'usuari en el sistema*
+
+> sudo useradd asix
+
+![sudo useradd asix](https://user-images.githubusercontent.com/101892290/159770234-50bfbdc5-2b5c-43ac-9ae1-b560fd632959.jpg)
+
+*Canviem la contrasenya*
+
+> sudo passwd asix
+
+![sudo passwd asix](https://user-images.githubusercontent.com/101892290/159770443-67ae3fcf-12e5-41c6-924b-56940d438dac.jpg)
+
+*Afegirem al arxiu /etc/my.cnf l'usuari asix i la seva contrasenya*
+
+> entrem amb nano /etc/my.cnf
+
+![nano etc asix ponerlo](https://user-images.githubusercontent.com/101892290/159770610-95e2d502-081c-418d-9fc6-418ada293b54.jpg)
+
+*Comprovació de que pot entrar sense possar contrasenya*
+
+> su asix i després mysql
+
+![su asix](https://user-images.githubusercontent.com/101892290/159770818-5e2058ef-169d-4db2-9cf5-7eff590c599d.jpg)
+
+
+
+
+
+
+
+
 
