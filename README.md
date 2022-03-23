@@ -150,7 +150,7 @@
 
 ![sudo useradd asix](https://user-images.githubusercontent.com/101892290/159770234-50bfbdc5-2b5c-43ac-9ae1-b560fd632959.jpg)
 
-*Canviem la contrasenya*
+*Canviem la contrasenya a patata*
 
 > sudo passwd asix
 
@@ -168,11 +168,32 @@
 
 ![su asix](https://user-images.githubusercontent.com/101892290/159770818-5e2058ef-169d-4db2-9cf5-7eff590c599d.jpg)
 
+## 6. El servei de MySQL (mysqld) escolta al port 3306. Quina modificació/passos caldrien fer per canviar aquest port a 33306 per exemple? Important: No realitzis els canvis. Només indica els passos que faries. ##
+
+*Per modificar el port escolta 3306 al port 33306, primer hauriem d'aturar el servei amb la seguent comanda*
+
+>sudo service mysql stop
+
+*I després, al arxiu /etc/my.cnf posar els parametres seguents*
+
+![puerto cambiarlo](https://user-images.githubusercontent.com/101892290/159771597-fab517de-7442-4f2a-9183-0cd1d1d768a8.jpg)
 
 
+#### Links diversos (Sobre Percona).
 
+> https://www.inmotionhosting.com/support/server/databases/edit-mysql-my-cnf/
 
+> https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
 
+> https://www.percona.com/doc/percona-server/LATEST/installation/post-installation.html
 
+> https://www.percona.com/doc/percona-server/8.0/installation/yum_repo.html
 
+> https://www.stackscale.com/es/blog/instalar-servidor-percona-sustituto-mysql/
+
+#### Links diversos (Sobre GitHub).
+
+> https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+> https://www.youtube.com/watch?v=xmK1Q5uzH4w
 
