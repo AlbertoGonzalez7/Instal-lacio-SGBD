@@ -191,6 +191,8 @@
 
 > https://www.stackscale.com/es/blog/instalar-servidor-percona-sustituto-mysql/
 
+> https://www.linuxhispano.net/2012/04/18/donde-almacena-los-datos-mysql/#:~:text=El%20lugar%20suele%20ser%3A%20%2Fvar,debemos%20mirar%20el%20fichero%20my.
+
 #### Links diversos (Sobre GitHub).
 
 > https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
