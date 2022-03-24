@@ -1,5 +1,5 @@
 # Instal-lacio-SGBD MySQL Percona Server
-# PART 1 - Alberto Gonzalez
+# PART 1 - Alberto Gonzalez i David Gil
 
 ![percona logo](https://user-images.githubusercontent.com/101892290/159756334-cd8dacc6-2811-44b4-b46f-c83616fa32d8.jpg)
 
